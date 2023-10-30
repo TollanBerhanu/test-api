@@ -3,10 +3,10 @@ from flask import Flask, make_response, request, Response
 from flask_cors import CORS
 
 app = Flask(__name__)
-# CORS(app=app,
-#      origins=['http://localhost:8065/'],
-#      supports_credentials=True)   # , resources={r"/*": {"origins": "http://localhost:3000"}})
-CORS(app)
+CORS(app=app,
+     origins=['http://localhost:8065/'],
+     supports_credentials=True)   # , resources={r"/*": {"origins": "http://localhost:3000"}})
+# CORS(app)
 
 
 # Session config
